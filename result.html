@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>上报位置</title>
+	<link rel="shortcut icon" href="http://wz.hitwh.edu.cn/resources/hit/favicon/favicon.ico">
+	<link rel="stylesheet" href="./css/commen.css">
+	<link rel="stylesheet" href="./css/iconfont.css">
+	<link rel="stylesheet" href="./css/qiandao.css">
+	<script src="replace.js"></script>
+	<style>
+		.qd-jr {
+			background: #09ca68;
+		}
+
+		.bcg {
+			background: #ed1c37;
+		}
+	</style>
+</head>
+
+<body onload="replace()">
+	<div class="qd-box">
+		<div class="qd-head">
+			<div class="qd-left">
+				<div class="qd-name" id="xm">{name}</div>
+				<div class="qd-number" id="xh">{xh}</div>
+			</div>
+			<div class="qd-right">
+				<span class="iconfont icontuichu"></span>
+				<span class="qd-tcdl" onclick="signOut()"><a href="http://authserver.hitwh.edu.cn/authserver/login">退出登录</a></span>
+			</div>
+		</div>
+		<div class="ke-box">
+			<div class="qd-kename" id="kcxx">位置信息 </div>
+			<div class="qd-jssj">
+				<div class="line"><span>楼宇：</span><span id="skdd">学校南门出(限制2次)</span></div>
+				<div class="line"><span> 日期：</span><span id="skrq">{date1}</span></div>
+			</div>
+			<div style="display: flex;">
+				<div id="sb_cg" class="qd-button" style="">上报位置成功</div>
+				<div id="sb_bcg" class="qd-button bcg" style="display:none"></div>
+			</div>
+		</div>
+		<div class="qd-jrqd">
+			<div class="qd-tipline">
+				<div class="tip">今日上报</div>
+			</div>
+			<div class="qd-lbbox" id="jrqd1">
+				<div id="jrqd">
+					<div class="ke-box lbke">
+						<div class="qd-kename" style="font-weight: normal;;margin-top:5px;">上报时间：<span id="date2">{date2}</span></div>
+						<div class="qd-rkxx"><span id="jsxm">学校南门出(限制2次)</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span
+								id="skjc">进入</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
